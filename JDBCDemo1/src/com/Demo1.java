@@ -15,11 +15,11 @@ public class Demo1 {
         // step 5 is close the connection 
         try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/igt","root", "1234");
-Statement stmt=con.createStatement();
-stmt.execute("insert into emp values(300,'Parvesh')");
-stmt.close();
-System.out.println("data inserted sucessfully...!");
+                Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/igt","root", "1234");
+                Statement stmt=con.createStatement();
+                stmt.execute("insert into emp values(300,'Parvesh')");
+                stmt.close();
+                System.out.println("data inserted sucessfully...!");
         } catch (Exception e) {
             System.out.println(e);
         }
